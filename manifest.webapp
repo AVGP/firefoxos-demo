@@ -1,7 +1,7 @@
 {
   "name": "BestAppEver",
   "description": "My elevator pitch goes here",
-  "launch_path": "/app.html",
+  "launch_path": "http://avgp.github.io/firefoxos-demo/app.html",
   "icons": {
   },
   "default_locale": "en"
