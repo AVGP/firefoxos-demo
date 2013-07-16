@@ -18,7 +18,7 @@
 
       if(navigator.mozApps) {
         document.getElementById("install").addEventListener('click', function() {
-          var myapp = navigator.mozApps.install("https://avgp.github.io/firefoxos-demo/manifest.webapp");
+          var myapp = navigator.mozApps.install("http://avgp.github.io/firefoxos-demo/manifest.webapp");
           myapp.onsuccess = function(data) {
             // App is installed, remove button
             alert("Yay! Victory!");
