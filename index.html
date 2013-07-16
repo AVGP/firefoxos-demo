@@ -14,8 +14,8 @@
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
+        $('#main_content').headsmart();
+
       if(navigator.mozApps) {
         document.getElementById("install").addEventListener('click', function() {
           var myapp = navigator.mozApps.install("https://avgp.github.io/firefoxos-demo/manifest.webapp");
@@ -25,6 +25,9 @@
           };
         });
       }
+
+      })
+
       
     </script>
     <title>Firefoxos-demo by AVGP</title>
