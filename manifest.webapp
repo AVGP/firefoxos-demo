@@ -1,0 +1,8 @@
+{
+  "name": "BestAppEver",
+  "description": "My elevator pitch goes here",
+  "launch_path": "/app.html",
+  "icons": {
+  },
+  "default_locale": "en"
+}
