@@ -5,5 +5,14 @@
   </head>
   <body>
     <h1>Hello Mozilla!</h1>
+    <div id="debug"></div>
+    <script type="text/javascript">
+        window.addEventListener('devicelight', function(event) {
+          document.getElementById("debug").innerHTML = event.value;
+          
+          document.getElementById("debug").style.backgroundColor = (event.value < 10 ? "black" : "white");
+          document.getElementById("debug").style.color = (event.value < 10 ? "white" : "black");
+        });
+    </script>
   </body>
 </html>
