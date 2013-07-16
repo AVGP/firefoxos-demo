@@ -16,6 +16,16 @@
       $(document).ready(function () {
         $('#main_content').headsmart()
       })
+      if(navigator.mozApps) {
+        document.getElementById("install").addEventListener('click', function() {
+          var myapp = navigator.mozApps.install("https://avgp.github.io/firefoxos-demo/manifest.webapp");
+          myapp.onsuccess = function(data) {
+            // App is installed, remove button
+            alert("Yay! Victory!");
+          };
+        });
+      }
+      
     </script>
     <title>Firefoxos-demo by AVGP</title>
   </head>
@@ -46,6 +56,7 @@
 
 
       <section id="main_content">
+        <button id="install">Install our super awesome app!</button>
         <h2>
 <a name="welcome-to-our-website" class="anchor" href="#welcome-to-our-website"><span class="octicon octicon-link"></span></a>Welcome to our website</h2>
 
